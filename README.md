@@ -3,6 +3,18 @@
 A customer-facing support agent for airline disruptions, built as a support console a real
 agent team could sit in front of. Three live cases — a cancellation and two delays — are
 loaded and testable the moment the app opens.
+# Airline Resolution Agent
+
+A customer-facing support agent for airline disruptions, built as a support console a real
+agent team could sit in front of. Three live cases — a cancellation and two delays — are
+loaded and testable the moment the app opens.
+
+##  Live Demo
+
+**[Open the Live Application](https://airline-resolution-agent.vercel.app/)**
+
+- **Backend API:** https://airline-resolution-agent-vrln.onrender.com
+- **Swagger API Documentation:** https://airline-resolution-agent-vrln.onrender.com/docs
 
 The point of the build is the split between what the agent *says* and what the agent *may
 do*. Wording is generated; eligibility is not. Every policy decision is computed by a
