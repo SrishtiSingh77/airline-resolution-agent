@@ -1,0 +1,14 @@
+{
+  "name": "airline-resolution-agent",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Customer-facing airline disruption resolution agent with a deterministic policy engine.",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "test:frontend": "npm --prefix frontend run test",
+    "test:backend": "cd backend && pytest",
+    "install:frontend": "npm --prefix frontend install"
+  }
+}

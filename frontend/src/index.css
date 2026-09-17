@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink-900 antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'ss01';
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-seal ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg border border-line bg-white shadow-card;
+  }
+
+  .label {
+    @apply text-[11px] font-semibold tracking-wide text-ink-300;
+  }
+
+  .value {
+    @apply text-sm font-medium text-ink-900;
+  }
+
+  /* Numeric data (times, delays, references) reads better aligned. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Chat scroll area */
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #d7dce3;
+  border-radius: 999px;
+}
